@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Élan | Client Profile</title>
+    <meta
+      name="description"
+      content="Luxury minimal client information landing page for a premium advisory brand."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark">M</span>
+          <span class="brand-name">MAISON ÉLAN</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#services">Services</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Private client portfolio</p>
+            <h1>Quiet confidence. Exceptional results.</h1>
+            <p class="lead">
+              Exceptional advisory for founders, executives, and modern businesses seeking
+              measured growth, refined systems, and a clearer path forward.
+            </p>
+
+            <div class="cta-row">
+              <a href="#contact" class="primary-btn">Book a consultation</a>
+              <a href="#services" class="secondary-btn">Explore services</a>
+            </div>
+          </div>
+
+          <aside class="info-card" aria-label="Client overview card">
+            <div class="card-topline">
+              <span class="label">Client</span>
+              <span class="status-tag">Active</span>
+            </div>
+            <h2>Maison Élan</h2>
+            <ul>
+              <li><span>Industry</span><strong>Advisory</strong></li>
+              <li><span>Location</span><strong>Paris, FR</strong></li>
+              <li><span>Engagement</span><strong>Retainer</strong></li>
+              <li><span>Review</span><strong>18 Nov 2026</strong></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="overview-grid" aria-label="Client information overview">
+          <article class="panel">
+            <p class="eyebrow">About</p>
+            <h3>Strategic clarity for a discerning client.</h3>
+            <p>
+              We help modern brands distill complexity into elegant systems, sharper
+              messaging, and a seamless experience across every client touchpoint.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="eyebrow">Primary contact</p>
+            <h3>Camille Laurent</h3>
+            <p>Managing Director</p>
+            <p>camille@maisonelan.com</p>
+          </article>
+
+          <article class="panel">
+            <p class="eyebrow">Engagement</p>
+            <h3>2026 growth advisory</h3>
+            <p>Multiphase planning</p>
+            <p>Next strategic review: 18 Nov 2026</p>
+          </article>
+        </section>
+
+        <section class="services" id="services">
+          <div class="section-head">
+            <p class="eyebrow">Services</p>
+            <h2>Tailored support, intentionally delivered.</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-number">01</span>
+              <h3>Brand strategy</h3>
+              <p>Positioning and company narrative built for meaningful, high-value growth.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">02</span>
+              <h3>Digital experience</h3>
+              <p>Luxury digital environments designed to convert attention into trust.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">03</span>
+              <h3>Operational systems</h3>
+              <p>Refined processes and reporting frameworks for steadier, smarter decisions.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="timeline" id="timeline">
+          <div class="section-head">
+            <p class="eyebrow">Timeline</p>
+            <h2>Milestones</h2>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="dot"></span>
+              <div>
+                <h3>Discovery workshop</h3>
+                <p>Stakeholder mapping, strategic priorities, and current-state insight.</p>
+                <time>January 2026</time>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="dot"></span>
+              <div>
+                <h3>Design & validation</h3>
+                <p>UX refinement, content architecture, and executive review cycle.</p>
+                <time>March 2026</time>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="dot"></span>
+              <div>
+                <h3>Implementation</h3>
+                <p>Launch readiness, KPI design, and long-term adoption planning.</p>
+                <time>June 2026</time>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-panel" id="contact">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Begin the next chapter.</h2>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Full name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email address
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Project notes
+              <textarea rows="4" placeholder="Tell us what you're planning..."></textarea>
+            </label>
+            <button type="submit">Send inquiry</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
