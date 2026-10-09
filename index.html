@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maison Élan | Client Profile</title>
+    <title>Maison Élan | Client Management</title>
     <meta
       name="description"
-      content="Luxury minimal client information landing page for a premium advisory brand."
+      content="Luxury minimal client information management system for a premium advisory brand."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,150 +26,111 @@
 
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#overview">Overview</a>
-          <a href="#services">Services</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#contact">Contact</a>
+          <a href="#clients">Clients</a>
+          <a href="#add-client">Add Client</a>
         </nav>
       </header>
 
       <main>
         <section class="hero" id="overview">
           <div class="hero-copy">
-            <p class="eyebrow">Private client portfolio</p>
-            <h1>Quiet confidence. Exceptional results.</h1>
+            <p class="eyebrow">Client Management</p>
+            <h1>Manage your client relationships seamlessly.</h1>
             <p class="lead">
-              Exceptional advisory for founders, executives, and modern businesses seeking
-              measured growth, refined systems, and a clearer path forward.
+              A refined system for tracking client information, managing engagement details, and maintaining exceptional communication through automated notifications.
             </p>
-
-            <div class="cta-row">
-              <a href="#contact" class="primary-btn">Book a consultation</a>
-              <a href="#services" class="secondary-btn">Explore services</a>
-            </div>
           </div>
 
-          <aside class="info-card" aria-label="Client overview card">
+          <aside class="info-card" aria-label="Client management card">
             <div class="card-topline">
-              <span class="label">Client</span>
+              <span class="label">System</span>
               <span class="status-tag">Active</span>
             </div>
-            <h2>Maison Élan</h2>
+            <h2>Client Portal</h2>
             <ul>
-              <li><span>Industry</span><strong>Advisory</strong></li>
-              <li><span>Location</span><strong>Paris, FR</strong></li>
-              <li><span>Engagement</span><strong>Retainer</strong></li>
-              <li><span>Review</span><strong>18 Nov 2026</strong></li>
+              <li><span>Type</span><strong>Management</strong></li>
+              <li><span>Feature</span><strong>Full CRUD</strong></li>
+              <li><span>Notifications</span><strong>Email</strong></li>
+              <li><span>Storage</span><strong>Local</strong></li>
             </ul>
           </aside>
         </section>
 
-        <section class="overview-grid" aria-label="Client information overview">
-          <article class="panel">
-            <p class="eyebrow">About</p>
-            <h3>Strategic clarity for a discerning client.</h3>
-            <p>
-              We help modern brands distill complexity into elegant systems, sharper
-              messaging, and a seamless experience across every client touchpoint.
-            </p>
-          </article>
-
-          <article class="panel">
-            <p class="eyebrow">Primary contact</p>
-            <h3>Camille Laurent</h3>
-            <p>Managing Director</p>
-            <p>camille@maisonelan.com</p>
-          </article>
-
-          <article class="panel">
-            <p class="eyebrow">Engagement</p>
-            <h3>2026 growth advisory</h3>
-            <p>Multiphase planning</p>
-            <p>Next strategic review: 18 Nov 2026</p>
-          </article>
-        </section>
-
-        <section class="services" id="services">
-          <div class="section-head">
-            <p class="eyebrow">Services</p>
-            <h2>Tailored support, intentionally delivered.</h2>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card">
-              <span class="service-number">01</span>
-              <h3>Brand strategy</h3>
-              <p>Positioning and company narrative built for meaningful, high-value growth.</p>
-            </article>
-            <article class="service-card">
-              <span class="service-number">02</span>
-              <h3>Digital experience</h3>
-              <p>Luxury digital environments designed to convert attention into trust.</p>
-            </article>
-            <article class="service-card">
-              <span class="service-number">03</span>
-              <h3>Operational systems</h3>
-              <p>Refined processes and reporting frameworks for steadier, smarter decisions.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="timeline" id="timeline">
-          <div class="section-head">
-            <p class="eyebrow">Timeline</p>
-            <h2>Milestones</h2>
-          </div>
-
-          <div class="timeline-list">
-            <div class="timeline-item">
-              <span class="dot"></span>
-              <div>
-                <h3>Discovery workshop</h3>
-                <p>Stakeholder mapping, strategic priorities, and current-state insight.</p>
-                <time>January 2026</time>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="dot"></span>
-              <div>
-                <h3>Design & validation</h3>
-                <p>UX refinement, content architecture, and executive review cycle.</p>
-                <time>March 2026</time>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="dot"></span>
-              <div>
-                <h3>Implementation</h3>
-                <p>Launch readiness, KPI design, and long-term adoption planning.</p>
-                <time>June 2026</time>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="contact-panel" id="contact">
+        <!-- Add Client Form Section -->
+        <section class="contact-panel" id="add-client">
           <div class="contact-copy">
-            <p class="eyebrow">Contact</p>
-            <h2>Begin the next chapter.</h2>
+            <p class="eyebrow">Add New Client</p>
+            <h2>Create a new client record.</h2>
           </div>
 
-          <form class="contact-form">
+          <form class="contact-form" id="clientForm">
             <label>
               Full name
-              <input type="text" placeholder="Your name" />
+              <input type="text" id="clientName" placeholder="Client name" required />
             </label>
             <label>
               Email address
-              <input type="email" placeholder="you@example.com" />
+              <input type="email" id="clientEmail" placeholder="client@example.com" required />
             </label>
             <label>
-              Project notes
-              <textarea rows="4" placeholder="Tell us what you're planning..."></textarea>
+              Phone number
+              <input type="tel" id="clientPhone" placeholder="+1 (555) 000-0000" required />
             </label>
-            <button type="submit">Send inquiry</button>
+            <label>
+              Description
+              <textarea id="clientDescription" rows="3" placeholder="Client details and notes..."></textarea>
+            </label>
+            <label>
+              Admin notification email
+              <input type="email" id="adminEmail" placeholder="admin@example.com" required />
+            </label>
+            <button type="submit">Add Client</button>
           </form>
         </section>
+
+        <!-- Clients List Section -->
+        <section class="clients-section" id="clients">
+          <div class="section-head">
+            <p class="eyebrow">Client Records</p>
+            <h2>Active client roster</h2>
+          </div>
+
+          <div id="clientsList" class="clients-grid">
+            <p class="empty-state">No clients yet. Add your first client above.</p>
+          </div>
+        </section>
       </main>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Client</h2>
+        <form id="editForm">
+          <label>
+            Full name
+            <input type="text" id="editName" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" id="editEmail" required />
+          </label>
+          <label>
+            Phone number
+            <input type="tel" id="editPhone" required />
+          </label>
+          <label>
+            Description
+            <textarea id="editDescription" rows="3"></textarea>
+          </label>
+          <label>
+            Admin notification email
+            <input type="email" id="editAdminEmail" required />
+          </label>
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
